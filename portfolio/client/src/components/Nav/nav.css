@@ -1,0 +1,17 @@
+.portfolio {
+  margin-right: 15px;
+  height: 90px;
+  width: 90px;
+  background-color: lightcyan !important;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: peru;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-wrapper {
+  width: 100% !important;
+}
