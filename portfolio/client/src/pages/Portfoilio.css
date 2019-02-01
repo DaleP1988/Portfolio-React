@@ -1,0 +1,11 @@
+a {
+  color: gray !important;
+}
+
+.parallax-container.parallax {
+  height: 150px;
+}
+
+.parallaxb {
+  height: 250px;
+}

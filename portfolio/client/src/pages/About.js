@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
-import { Parallax, Card, CardTitle, CardPanel } from "react-materialize";
+import { Parallax, Card, CardTitle, CardPanel, Icon } from "react-materialize";
 // import { ParallaxBanner } from "react-scroll-parallax";
 import background from "../images/cooltile.jpg";
 import tile from "../images/pinktile.jpg";
+import github from "../images/github.png";
+import linkedin from "../images/linkedin.png";
+import Dale from "../images/Dale2018Photo.jpg";
 import computerFace from "../images/computerFace.jpg";
 import NavB from "../components/NavB";
+import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 import "./About.css";
 import { Link } from "react-router-dom";
 
@@ -14,13 +19,22 @@ class About extends Component {
     return (
       <div>
         <NavB />
-        <Parallax imageSrc={background} style={{ width: "100%" }} />
+        <Parallax
+          className="parallax"
+          imageSrc={background}
+          style={{ width: "100%", height: "50%" }}
+        />
 
         <div className="section lime lighten-4">
           <Container>
             <Row>
               <Col size="8">
-                <h2 className="header">About Me</h2>
+                <h2
+                  className="header"
+                  style={{ fontFamily: "Poiret One, cursive" }}
+                >
+                  ABOUT ME
+                </h2>
               </Col>
             </Row>
             <Row>
@@ -29,29 +43,40 @@ class About extends Component {
                   header={
                     <CardTitle reveal image={computerFace} waves="light" />
                   }
-                  title="Get in Touch"
+                  title="CONTACT"
                   reveal={
-                    <p>
+                    <p id="reveal">
+                      <img id="biopic" src={Dale} />
                       <br />
+                      <a href="#">
+                        <Icon style={{ fontSize: "30px" }}>work</Icon> Resume
+                      </a>
+                      <img id="github" src={github} />
+                      <a href="#">GitHub</a>
+                      <img id="linkedin" src={linkedin} />
                       <a href="#">LinkedIn</a>
                       <br />
-                      <br />
-                      <a href="#">GitHub</a>
-                      <br />
-                      <br />
+                      <Icon style={{ fontSize: "30px" }}>
+                        mail_outline
+                      </Icon>{" "}
                       dale.m.padelford@gmail.com
                     </p>
                   }
                 >
                   <p>
-                    <a href="/portfolio">see my work</a>
+                    <a id="visit" href="/portfolio">
+                      VISIT MY WORK
+                    </a>
                   </p>
                 </Card>
               </Col>
               <Col size="6">
                 <Row>
                   {/* <Col s={12} m={5}> */}
-                  <CardPanel className="teal lighten-4 black-text">
+                  <CardPanel
+                    id="aboutCard"
+                    className="teal lighten-4 black-text"
+                  >
                     <span>
                       I am a very simple card. I am good at containing small
                       bits of information. I am convenient because I require
@@ -69,7 +94,9 @@ class About extends Component {
           </Container>
         </div>
 
-        <Parallax imageSrc={background} />
+        <Parallax className="parallax" imageSrc={background} />
+
+        <Footer />
       </div>
     );
   }

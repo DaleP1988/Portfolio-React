@@ -3,6 +3,7 @@ import { Col, Row, Container } from "../components/Grid";
 import { Parallax } from "react-materialize";
 // import { ParallaxBanner } from "react-scroll-parallax";
 import background from "../images/cooltile.jpg";
+import Footer from "../components/Footer";
 import vr from "../images/computerFace.jpg";
 // import tile from "../images/pinktile.jpg";
 import Nav from "../components/Nav";
@@ -17,9 +18,15 @@ class Enter extends Component {
 
         <div className="section grey lighten-2">
           <div className="row container">
-            <h2 className="header">Dale Padelford</h2>
+            <h2
+              className="header"
+              style={{ fontFamily: "Poiret One, cursive" }}
+            >
+              DALE PADELFORD
+            </h2>
+            <p className="grey-text text-darken-3 lighten-3">WEB DESIGNER +</p>
             <p className="grey-text text-darken-3 lighten-3">
-              Web Designer and Developer
+              FRONT END WEB DEVELOPER
             </p>
             <Link to="/about">
               {" "}
@@ -27,13 +34,14 @@ class Enter extends Component {
                 className="waves-effect waves-light btn-small lime lighten-5"
                 style={{ color: "grey" }}
               >
-                Enter Site
+                HAVE A LOOK
               </a>{" "}
             </Link>
           </div>
         </div>
 
-        <Parallax imageSrc={vr} id="vr" />
+        <Parallax imageSrc={background} id="vr" />
+        <Footer />
       </div>
     );
   }

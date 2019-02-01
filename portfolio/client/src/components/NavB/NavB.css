@@ -1,4 +1,8 @@
 h1 {
+  font-family: "Major Mono Display", monospace;
+}
+h5,
+li {
   font-family: "Poiret One", cursive;
 }
 
