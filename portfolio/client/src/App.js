@@ -5,7 +5,6 @@ import Contact from "./components/Contact";
 import Enter from "./pages/Enter";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
-// import Contact from "./pages/Contacft";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
