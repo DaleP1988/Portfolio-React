@@ -2,7 +2,6 @@ import React from "react";
 import "./Contact.css";
 import { Icon, Input } from "react-materialize";
 import { Col, Row, Container } from "../Grid";
-import { Link } from "react-router-dom";
 
 const Contact = () => (
   <div className="section lime lighten-5" id="contact">

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 import Enter from "./pages/Enter";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
@@ -22,14 +23,11 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-          {/* <Nav /> */}
           <Switch>
             <Route exact path="/" component={Enter} />
             <Route exact path="/about" component={About} />
-            {/* <Route exact path="/contact" component={Contact} /> */}
             <Route exact path="/portfolio" component={Portfolio} />
           </Switch>
-          {/* <Footer /> */}
         </div>
       </Router>
     );
