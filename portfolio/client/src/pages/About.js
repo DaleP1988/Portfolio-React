@@ -25,16 +25,16 @@ class About extends Component {
           style={{ width: "100%", height: "50%" }}
         />
 
-        <div className="section lime lighten-4">
+        <div className="section lime lighten-5">
           <Container>
             <Row>
               <Col size="8">
-                <h2
+                <h5
                   className="header"
                   style={{ fontFamily: "Poiret One, cursive" }}
                 >
                   ABOUT ME
-                </h2>
+                </h5>
               </Col>
             </Row>
             <Row>
@@ -43,23 +43,42 @@ class About extends Component {
                   header={
                     <CardTitle reveal image={computerFace} waves="light" />
                   }
+                  style={{ height: "400px" }}
                   title="CONTACT"
                   reveal={
                     <p id="reveal">
                       <img id="biopic" src={Dale} />
                       <br />
-                      <a href="#">
-                        <Icon style={{ fontSize: "30px" }}>work</Icon> Resume
-                      </a>
                       <img id="github" src={github} />
-                      <a href="#">GitHub</a>
+                      <a className="label" href="#">
+                        {/* GitHub */}
+                      </a>
+                      {/* <br /> */}
                       <img id="linkedin" src={linkedin} />
-                      <a href="#">LinkedIn</a>
+                      <a className="label" href="#">
+                        {/* LinkedIn */}
+                      </a>
                       <br />
-                      <Icon style={{ fontSize: "30px" }}>
+                      <a id="resume" href="#">
+                        <Icon
+                          className="medium material-icons"
+                          style={{
+                            fontSize: "70px !important",
+                            marginRight: "15px"
+                          }}
+                        >
+                          work
+                        </Icon>
+                        {/* Resume */}
+                      </a>
+                      {/* <br /> */}
+                      <Icon
+                        className="medium material-icons"
+                        style={{ fontSize: "70px" }}
+                      >
                         mail_outline
                       </Icon>{" "}
-                      dale.m.padelford@gmail.com
+                      {/* dale.m.padelford@gmail.com */}
                     </p>
                   }
                 >
@@ -75,13 +94,12 @@ class About extends Component {
                   {/* <Col s={12} m={5}> */}
                   <CardPanel
                     id="aboutCard"
+                    style={{ height: "400px", width: "500px" }}
                     className="teal lighten-4 black-text"
                   >
-                    <span>
-                      I am a very simple card. I am good at containing small
-                      bits of information. I am convenient because I require
-                      little markup to use effectively. I am similar to what is
-                      called a panel in other frameworks.
+                    <span style={{ fontFamily: "Poiret One, cursive" }}>
+                      <p>I'm a Web Designer and Front-End Web Developer.</p>
+                      <p />
                     </span>
                   </CardPanel>
                   {/* </Col> */}

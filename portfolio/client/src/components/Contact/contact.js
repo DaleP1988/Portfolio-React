@@ -10,7 +10,11 @@ const Contact = () => (
         <Col size="4">
           <h2
             className="grey-text"
-            style={{ fontFamily: " Poiret One, cursive !important" }}
+            style={{
+              fontFamily: " Poiret One, cursive !important",
+              fontSize: "30px",
+              color: "black   !important"
+            }}
           >
             CONTACT
           </h2>
@@ -22,16 +26,15 @@ const Contact = () => (
             person
           </Icon>{" "}
           <Row>
-            <Input placeholder="" s={8} label="Name" />
+            <Input placeholder="Name" s={8} label="" />
           </Row>
           <Row>
             <Icon className="small " style={{}}>
               edit
             </Icon>{" "}
             <form>
-              <label>
-                Message
-                <input type="text" name="name" />
+              <label className="label">
+                <input type="text" placeholder="Message" name="name" />
               </label>
             </form>
           </Row>
@@ -41,9 +44,8 @@ const Contact = () => (
                 email
               </Icon>{" "}
               <form>
-                <label>
-                  Email
-                  <input type="text" name="name" />
+                <label className="label">
+                  <input type="text" placeholder="Email" name="name" />
                 </label>
               </form>
             </Col>
@@ -52,9 +54,8 @@ const Contact = () => (
                 phone
               </Icon>{" "}
               <form>
-                <label>
-                  Phone
-                  <input type="text" name="name" />
+                <label className="label">
+                  <input type="text" placeholder="Phone" name="name" />
                 </label>
               </form>
             </Col>

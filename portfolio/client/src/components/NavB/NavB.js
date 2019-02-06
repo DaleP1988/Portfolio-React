@@ -18,7 +18,7 @@ const NavB = () => (
         <ul className=" hide-on-med-and-down">
           <li className="left">
             <Link to="/" className="tab waves-effect waves-light black-text">
-              <h5>DALE PADELFORD</h5>
+              <h5 id="name">DALE PADELFORD</h5>
             </Link>
           </li>
           <li>

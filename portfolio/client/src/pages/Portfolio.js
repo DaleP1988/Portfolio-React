@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
-import { Parallax, CardPanel } from "react-materialize";
+import { Parallax, CardPanel, Button } from "react-materialize";
 import background from "../images/cooltile.jpg";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
@@ -14,16 +14,20 @@ class Portfolio extends Component {
         <NavB />
         <Parallax className="parallax" imageSrc={background} />
         <div className="section lime lighten-5">
-          <CardPanel className="teal lighten-4 black-text">
-            <span>
-              <h2
-                className="header"
-                style={{ fontFamily: "Poiret One, cursive" }}
-              >
-                PORTFOLIO
-              </h2>
-            </span>
-          </CardPanel>
+          {/* <CardPanel className="teal lighten-4 black-text"> */}
+          <span>
+            <h2
+              className="header"
+              style={{
+                fontFamily: "Poiret One, cursive",
+                fontSize: "40px",
+                marginLeft: "10%"
+              }}
+            >
+              PORTFOLIO
+            </h2>
+          </span>
+          {/* </CardPanel> */}
 
           <Container>
             <Row>
@@ -35,9 +39,19 @@ class Portfolio extends Component {
                       className="waves-effect waves-light btn-small lime lighten-5"
                       style={{ color: "gray" }}
                     >
-                      Crystals Collector
+                      Crystals Game
                     </a>{" "}
                   </Link>
+                  <br />
+                  <br />
+
+                  <Button
+                    className="waves-effect waves-light btn-small lime lighten-5"
+                    style={{ color: "gray", fontSize: "9px" }}
+                  >
+                    {" "}
+                    View on Github
+                  </Button>
                 </CardPanel>
               </Col>
               <Col size="4">
@@ -51,6 +65,15 @@ class Portfolio extends Component {
                       Giphtastic
                     </a>{" "}
                   </Link>
+                  <br />
+                  <br />
+                  <Button
+                    className="waves-effect waves-light btn-small lime lighten-5"
+                    style={{ color: "gray", fontSize: "9px" }}
+                  >
+                    {" "}
+                    View on Github
+                  </Button>
                 </CardPanel>
               </Col>
               <Col size="4">
@@ -64,6 +87,15 @@ class Portfolio extends Component {
                       Train Scheduler
                     </a>{" "}
                   </Link>
+                  <br />
+                  <br />
+                  <Button
+                    className="waves-effect waves-light btn-small lime lighten-5"
+                    style={{ color: "gray", fontSize: "9px" }}
+                  >
+                    {" "}
+                    View on Github
+                  </Button>
                 </CardPanel>
               </Col>
             </Row>
@@ -79,6 +111,15 @@ class Portfolio extends Component {
                       React NY Times
                     </a>{" "}
                   </Link>
+                  <br />
+                  <br />
+                  <Button
+                    className="waves-effect waves-light btn-small lime lighten-5"
+                    style={{ color: "gray", fontSize: "9px" }}
+                  >
+                    {" "}
+                    View on Github
+                  </Button>
                 </CardPanel>
               </Col>
               <Col size="4">
@@ -92,6 +133,15 @@ class Portfolio extends Component {
                       Save My Asana UI
                     </a>{" "}
                   </Link>
+                  <br />
+                  <br />
+                  <Button
+                    className="waves-effect waves-light btn-small lime lighten-5"
+                    style={{ color: "gray", fontSize: "9px" }}
+                  >
+                    {" "}
+                    View on Github
+                  </Button>
                 </CardPanel>
               </Col>
               <Col size="4">
@@ -105,6 +155,15 @@ class Portfolio extends Component {
                       Subr App UI
                     </a>{" "}
                   </Link>
+                  <br />
+                  <br />
+                  <Button
+                    className="waves-effect waves-light btn-small lime lighten-5"
+                    style={{ color: "gray", fontSize: "9px" }}
+                  >
+                    {" "}
+                    View on Web
+                  </Button>
                 </CardPanel>
               </Col>
             </Row>

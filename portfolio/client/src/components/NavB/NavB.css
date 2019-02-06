@@ -1,7 +1,11 @@
 h1 {
   font-family: "Major Mono Display", monospace;
 }
-h5,
+#name {
+  font-family: "Poiret One", cursive;
+
+  font-size: 35px;
+}
 li {
   font-family: "Poiret One", cursive;
 }

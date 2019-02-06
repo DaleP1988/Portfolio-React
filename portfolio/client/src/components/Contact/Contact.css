@@ -1,3 +1,13 @@
 #contact {
-  height: 250px;
+  height: 200px;
 }
+.grey-text {
+  color: black;
+}
+#text {
+  color: black !important;
+}
+/* 
+.label {
+  color: black;
+} */
