@@ -73,7 +73,7 @@ class About extends Component {
                       </a>
                       {/* <br /> */}
                       <Icon
-                        className="medium material-icons"
+                        className=" material-icons"
                         style={{ fontSize: "70px" }}
                       >
                         mail_outline

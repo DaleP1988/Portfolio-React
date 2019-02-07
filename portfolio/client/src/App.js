@@ -5,6 +5,7 @@ import Contact from "./components/Contact";
 import Enter from "./pages/Enter";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
+import Resume from "./pages/Resume";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -26,6 +27,7 @@ class App extends React.Component {
             <Route exact path="/" component={Enter} />
             <Route exact path="/about" component={About} />
             <Route exact path="/portfolio" component={Portfolio} />
+            {/* <Route exact path="/resume" component={Resume} /> */}
           </Switch>
         </div>
       </Router>

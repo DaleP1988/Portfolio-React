@@ -29,6 +29,14 @@ const NavB = () => (
               ABOUT
             </Link>
           </li>
+          {/* <li>
+            <Link
+              to="/resume"
+              className="tab waves-effect waves-light black-text"
+            >
+              RESUME
+            </Link>
+          </li> */}
           <li>
             <Link
               to="/portfolio"
